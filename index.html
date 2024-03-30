@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹페이지</title>
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/41722206d0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- 
+        <필수구문>
+        mediaquery
+        :반응형(해상도 폭에 따라 서로 다른  css 연결)
+        nth-of-type()
+        :여러개의 콘텐츠 박스들을 추가 없이 각기 다르게 선택
+        box-sizing
+        :특정 요소의 padding 과border 값을 기존의 넚이 값과 높이 값에 포함
+        transition
+        :전환효과
+        웹폰트 아이콘
+        :아이콘 생성
+        구글 웹폰튼
+        :폰트
+        animation
+        :페이지 로딩시, 콘텐츠 박스 모션 구현
+        transform(2d 변형)
+        :주 메뉴와 텍스트 박스의 텍스트를 확대
+
+        <작업순서>
+        1. 준비작업
+        2. 가로폭 1600px 이상에서의 기본 레이아웃 설정
+        3. 미디어 쿼리로 화면 폭마다 레이아웃 다르게 설정
+        4. <header> 완성
+        5. <nav>, <article> 콘텐츠 채워 넣기
+        6. 특정화면 폭에서 어색한 부분 수정
+     -->
+    <!-- 
+        2. 가로폭 1600px 이상에서의 기본 레이아웃 설정 -->
+    <!-- 4. <header> 완성 -->
+    <header>
+        <h1>logo</h1>
+        <ul id="gnb">
+            <li><a href="#"><i class="fa-solid fa-person-walking"></i>Walking</a></li>
+            <li><a href="#"><i class="fa-solid fa-bicycle"></i>Riding</a></li>
+            <li><a href="#"><i class="fa-solid fa-location-dot"></i>N-Zero Spot</a></li>
+            <li><a href="#"><i class="fa-solid fa-glass-water"></i>E-Cup</a></li>
+        </ul>
+        <div class="snsSet">
+            <a href="#"><img src="./img/sns1.png" alt="about"></a>
+            <a href="#"><img src="./img/sns2.png" alt="contact"></a>
+            <a href="#"><img src="./img/sns3.png" alt="facebook"></a>
+            <a href="#"><img src="./img/sns4.png" alt="twitter"></a>
+            <a href="#"><img src="./img/sns5.png" alt="etc"></a>
+        </div>
+    </header>
+    <!-- 5. <nav>, <article> 콘텐츠 채워 넣기 -->
+    <nav>
+        <a href="#"><img src="./img/util1.png"></a>
+        <a href="#"><img src="./img/util2.png"></a>
+        <a href="#"><img src="./img/util3.png"></a>
+        <a href="#"><img src="./img/util4.png"></a>
+    </nav>
+    <section>
+        <article>
+            <div class="bg bg1">
+                <span>ChunCheon</span>
+            </div>
+        </article>
+        <article>
+            <div class="txt">
+                <i class="fas fa-arrow-right"></i>
+                <p>
+                    <strong>Net-Zero Travel</strong><br>
+                    <em>I can show you the greencity.</em>
+                </p>
+
+            </div>
+        </article>
+        <article>
+            <div class="txt">
+                <i class="fa-solid fa-circle-h"></i>
+                <p><strong>Reservation</strong></p>
+            </div>
+        </article>
+        <article>
+            <div class="bg bg2">
+                <span>Spring</span>
+
+            </div>
+        </article>
+        <article>
+            <div class="bg bg3">
+                <span>Surf</span>
+            </div>
+        </article>
+        <article>
+            <div class="txt">
+                <i class="fas fa-arrow-right"></i>
+                <p>
+                    <strong>A Dazziling Place</strong><br>
+                    <em>I can show you the greencity</em>
+                </p>
+            </div>
+        </article>
+        <article>
+            <div class="bg bg4">
+                <span>Activity</span>
+            </div>
+        </article>
+        <article>
+            <div class="txt">
+                <i class="fas fa-arrow-right"></i>
+                <strong>Hot spot</strong><br>
+                <em>A best place to have a vacation <br>
+                Tell me when you</em>
+            </div>
+        </article>
+        <article>
+            <div class="bg bg5">
+                <span>River</span>
+            </div>
+        </article>
+        <article>
+            <div class="bg bg6">
+                <span>Leisure</span>
+            </div>
+        </article>
+        <article>
+            <div class="txt">
+                <i class="fas fa-arrow-right"></i>
+                <p>
+                    <strong>Open Space</strong><br>
+                    <em>I can show you the ecocity</em>
+                </p>
+            </div>
+        </article>
+        <article>
+            <div class="bg bg7">
+                <span>Tour</span>
+            </div>
+        </article>
+
+    </section>
+</body>
+
+</html>
